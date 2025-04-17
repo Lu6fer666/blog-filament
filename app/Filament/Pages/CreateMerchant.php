@@ -209,7 +209,7 @@ class CreateMerchant extends Page
                         logger()->info('🔁 Méthode paiement - Status: ' . $updateResponse->status());
                         logger()->info('🔁 Méthode paiement - Headers: ' . json_encode($updateResponse->headers()));
                         logger()->info('🔁 Méthode paiement - Body: ' . $updateResponse->body());
- 
+
                         if ($updateResponse->successful()) {
                             Notification::make()
                                 ->title('Méthode de paiement liée')

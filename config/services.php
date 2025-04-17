@@ -38,5 +38,4 @@ return [
     'minesec' => [
         'token' => env('MINESECPAY_TOKENPROD'),
     ],
-
 ];

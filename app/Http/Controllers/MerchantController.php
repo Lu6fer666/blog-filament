@@ -11,7 +11,7 @@ use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Http;
 
-class CreateMerchant extends Page
+class MerchantController extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-plus-circle';
     protected static string $view = 'filament.pages.create-merchant';
@@ -34,7 +34,7 @@ class CreateMerchant extends Page
             TextInput::make('contactAddress')->required(),
             TextInput::make('contactPhone')->required(),
             TextInput::make('mcc')->label('MCC'),
-            TextInput::make('timeZone')->default('Africa/Douala'),
+            TextInput::make('timeZone')->default('Europe/Brussels'),
             TextInput::make('receiptLogo')->label('URL du logo'),
             TextInput::make('supportedPaymentMethods')
                 ->label('Méthodes de paiement (séparées par virgule)')
